@@ -1,0 +1,90 @@
+﻿<!--
+    Vista para listar los autores en la biblioteca (ASP.NET Core Razor View)
+
+    - Modelo: IEnumerable<BIBLIOTECA.Models.Autore>
+    - Título de la vista: "Autores"
+    - Estructura:
+        1. Encabezado con el título de la página.
+        2. Botón para añadir un nuevo autor.
+        3. Tabla con los siguientes campos:
+            - Nombre del autor.
+            - Nacionalidad.
+            - Fecha de nacimiento.
+            - Fecha de fallecimiento (si aplica).
+        4. Acciones por cada autor:
+            - Editar (botón amarillo con icono de lápiz).
+            - Ver detalles (botón morado con icono de ojo).
+            - Eliminar (botón rojo con icono de papelera).
+    - Diseño:
+        - Contenedor con efecto de sombra ("sombra-movimiento").
+        - Tabla responsiva con clases Bootstrap (`table-sm`, `table-striped`, `table-bordered`, `table-hover`).
+        - Uso de `dataTable` para mejorar la experiencia de usuario (si está habilitado en el proyecto).
+-->
+@model IEnumerable<BIBLIOTECA.Models.Autore>
+
+@{
+    ViewData["Title"] = "Autores";
+}
+
+<h1>Lista de autores</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-darkblue">Añadir un nuevo autor</a>
+</p>
+
+<div class="sombra-movimiento">
+    <div class="table-responsive">
+        <table id="dataTable" class="table table-sm table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NombreAutor)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NacionalidadAutor)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FechaNacimientoAutor)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FechaFallecimientoAutor)
+                    </th>
+                    <th>
+                        Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NombreAutor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NacionalidadAutor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FechaNacimientoAutor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FechaFallecimientoAutor)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.AutorId" class="btn btn-warning">
+                                <i class="bi bi-pencil"></i>
+                            </a> |
+                            <a asp-action="Details" asp-route-id="@item.AutorId" class="btn btn-purpple">
+                                <i class="bi bi-eye"></i>
+                            </a> |
+                            <a asp-action="Delete" asp-route-id="@item.AutorId" class="btn btn-danger">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

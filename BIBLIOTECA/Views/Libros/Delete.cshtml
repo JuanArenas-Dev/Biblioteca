@@ -1,0 +1,79 @@
+﻿<!--
+    Vista de eliminación de libros en una biblioteca (ASP.NET Core Razor View)
+
+    - Modelo: BIBLIOTECA.Models.Libro
+    - Título de la vista: "Eliminar"
+    - Estructura:
+        1. Encabezado con el título de la página y mensaje de confirmación.
+        2. Sección para mostrar los detalles del libro antes de su eliminación.
+        3. Campos mostrados:
+            - Título, Género, Editorial, Año de publicación, Número de páginas y Autor.
+        4. Formulario de eliminación con un campo oculto para el ID del libro.
+        5. Botones para confirmar la eliminación o cancelar y volver a la lista de libros.
+    - Diseño:
+        - Contenedor con efecto de sombra ("sombra-movimiento") y disposición responsiva ("col-lg-10 container").
+        - Estilos en el título "Eliminar" con la clase personalizada "eliminar".
+-->
+@model BIBLIOTECA.Models.Libro
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="eliminar">Eliminar</h1>
+
+<h3>¿Estás seguro de eliminar este libro?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <div class="sombra-movimiento col-lg-10 container">
+        <div>
+            <dl class="">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.TituloLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.TituloLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.GeneroLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.GeneroLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.EditorialLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.EditorialLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.AñoPublicacionLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.AñoPublicacionLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NumeroPaginasLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NumeroPaginasLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Autor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Autor.NombreAutor)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="LibroId" />
+                <input type="submit" value="Eliminar" class="btn btn-danger" /> 
+                <a asp-action="Index" class="btn btn-darkblue">Cancelar</a>
+            </form>
+
+        </div>
+    </div>
+    
+</div>

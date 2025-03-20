@@ -1,0 +1,70 @@
+﻿<!--
+    Vista para eliminar un autor en la biblioteca (ASP.NET Core Razor View)
+
+    - Modelo: BIBLIOTECA.Models.Autore
+    - Título de la vista: "Eliminar"
+    - Estructura:
+        1. Encabezado con el título de la página y mensaje de confirmación.
+        2. Advertencia sobre la eliminación de los libros asociados al autor.
+        3. Sección de detalles del autor con los siguientes campos:
+            - Nombre del autor.
+            - Nacionalidad.
+            - Fecha de nacimiento.
+            - Fecha de fallecimiento (si aplica).
+        4. Formulario de confirmación con botones para:
+            - Confirmar la eliminación (botón rojo).
+            - Cancelar y volver al listado de autores.
+    - Diseño:
+        - Contenedor con efecto de sombra y animación ("sombra-movimiento").
+        - Botón de eliminar en color rojo para enfatizar la acción.
+-->
+@model BIBLIOTECA.Models.Autore
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="eliminar">Eliminar</h1>
+
+<h3 class="eliminar">¿Estás seguro de que quieres eliminar este autor?</h3>
+<div>
+    <h4>Recuerda que si eliminas un autor, se eliminaran tambien todos sus libros</h4>
+    <hr />
+    <div class="sombra-movimiento col-lg-10 container">
+        <div>
+            <dl class="">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NombreAutor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NombreAutor)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NacionalidadAutor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NacionalidadAutor)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.FechaNacimientoAutor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.FechaNacimientoAutor)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.FechaFallecimientoAutor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.FechaFallecimientoAutor)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="AutorId" />
+                <input type="submit" value="Eliminar" class="btn btn-danger" /> 
+                <a asp-action="Index" class="btn btn-darkblue">Cancelar</a>
+            </form>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,103 @@
+﻿<!--
+    Vista de listado de libros en la biblioteca (ASP.NET Core Razor View)
+
+    - Modelo: IEnumerable<BIBLIOTECA.Models.Libro>
+    - Título de la vista: "Home"
+    - Estructura:
+        1. Encabezado con el título de la página.
+        2. Botón para añadir un nuevo libro.
+        3. Tabla que muestra la lista de libros con los siguientes campos:
+            - Título, Género, Editorial, Año de publicación, Número de páginas y Autor.
+        4. Columna de acciones con botones para:
+            - Editar (icono de lápiz).
+            - Ver detalles (icono de ojo).
+            - Eliminar (icono de papelera).
+    - Diseño:
+        - Contenedor con efecto de sombra ("sombra-movimiento").
+        - Tabla responsiva con clases de Bootstrap:
+            - `table-responsive` para adaptarse a diferentes tamaños de pantalla.
+            - `table-sm`, `table-striped`, `table-bordered`, `table-hover` para mejorar la visualización.
+-->
+@model IEnumerable<BIBLIOTECA.Models.Libro>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Lista de libros</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-darkblue">Añadir un libro nuevo</a>
+</p>
+
+<div class="sombra-movimiento">
+    <div class="table-responsive">
+        <table id="dataTable" class="table table-sm  table-striped table-bordered  table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TituloLibro)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.GeneroLibro)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EditorialLibro)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AñoPublicacionLibro)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NumeroPaginasLibro)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Autor)
+                    </th>
+                    <th>
+                        Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TituloLibro)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.GeneroLibro)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EditorialLibro)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AñoPublicacionLibro)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NumeroPaginasLibro)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Autor.NombreAutor)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.LibroId" class="btn btn-warning">
+                                <i class="bi bi-pencil"></i>
+                            </a> |
+                            <a asp-action="Details" asp-route-id="@item.LibroId" class="btn btn-purpple">
+                                <i class="bi bi-eye"></i>
+                            </a> |
+                            <a asp-action="Delete" asp-route-id="@item.LibroId" class="btn btn-danger">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+

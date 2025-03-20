@@ -1,0 +1,215 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/* Configuracion de estilos navbar (barra de navegacion) */
+.custom-navbar {
+    background-color: #4C3BCF !important; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.custom-navbar .navbar-brand {
+    margin-right: 30px; 
+    font-weight: bold;
+    color: white !important;
+    font-size: 20px;
+    border-right: 2px solid white;
+    padding-right: 13px;
+}   
+.custom-navbar .nav-link {
+    margin-left: 10px; 
+    color: white !important;
+    font-weight: bold;
+    font-size:15px;
+
+}
+.custom-navbar .nav-link:hover {
+        color: #77CDFF !important; 
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: white !important; 
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/list.svg") !important;
+    filter: invert(1); 
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Configuracion de estilos texto y botones */
+
+h1{
+    color:#3D3BF3;
+}
+.eliminar{
+    color:red;
+}
+.btn-darkblue {
+    background-color: #261FB3;
+    color: white !important;
+    border: none;
+}
+.btn-darkblue:hover {
+    background-color: #1A1480; /* Color más oscuro al pasar el mouse */
+    color: white !important; /* Mantiene el texto blanco */
+}
+.btn-purpple {
+    background-color:#8A00D4;
+    color:white !important;
+    border:none;
+}
+.btn-purpple:hover {
+        background-color: #6900A8;
+        color: white !important;
+}
+
+
+
+/* Configuracion de estilos datatable (tablas) */
+
+.dataTables_length select {
+    padding-right: 36px !important; 
+    text-align: left !important; 
+}
+
+.dataTable.table-bordered {
+    border-collapse: collapse !important;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+}
+
+
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border: none !important;
+    background: none !important;
+    padding: 5px 10px;
+}
+
+
+.table-hover tbody tr:hover {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+td {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+th {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+
+/* Configuracion de estilos para formularios*/
+.form-container {
+    min-height: 400px;
+    max-width: 500px;
+    width: 90%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.form-group label {
+    font-size: 18px; 
+    font-weight: bold;
+    margin-bottom: 8px; 
+    color: #333;
+}
+.btn-sumbit {
+    padding: 5px 15px; 
+    font-size: 18px;   
+    border-radius: 8px;  
+    font-weight: bold;  
+}
+.form-control {
+    font-size: 16px; 
+    padding: 7px; 
+    margin-bottom: 8px;
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+}
+
+.btn-sumbit {
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 100%; 
+}
+
+.mt-4 {
+    margin-top: 30px; 
+}
+
+/* Estilos de sombra para alrededor de los contenedores */
+
+@keyframes sombra-movimiento-alrededor {
+    0% {
+        box-shadow: -5px -5px 15px rgba(0, 0, 255, 0.4);
+    }
+
+    25% {
+        box-shadow: 5px -5px 15px rgba(0, 0, 255, 0.4);
+    }
+
+    50% {
+        box-shadow: 5px 5px 15px rgba(0, 0, 255, 0.4);
+    }
+
+    75% {
+        box-shadow: -5px 5px 15px rgba(0, 0, 255, 0.4);
+    }
+
+    100% {
+        box-shadow: -5px -5px 15px rgba(0, 0, 255, 0.4);
+    }
+}
+
+.sombra-movimiento {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    animation: sombra-movimiento-alrededor 5s infinite linear;
+}
+
+/*Estilo para las validaciones de los formularios*/
+
+.invalid-feedback {
+    color: #dc3545; /* Color rojo */
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.is-invalid {
+    border: 2px solid #dc3545; /* Resalta el input en rojo */
+    background-color: #f8d7da; /* Fondo ligeramente rojo */
+}

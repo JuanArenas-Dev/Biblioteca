@@ -1,0 +1,77 @@
+﻿<!--
+    Vista de detalles de un libro en la biblioteca (ASP.NET Core Razor View)
+
+    - Modelo: BIBLIOTECA.Models.Libro
+    - Título de la vista: "Detalle"
+    - Estructura:
+        1. Encabezado con el título de la página y descripción.
+        2. Sección para mostrar los detalles del libro.
+        3. Campos mostrados:
+            - Título, Género, Editorial, Año de publicación, Número de páginas y Autor.
+        4. Botones:
+            - Editar (icono de lápiz) para modificar el registro.
+            - Volver a la lista de libros.
+    - Diseño:
+        - Contenedor con efecto de sombra ("sombra-movimiento") y disposición responsiva ("col-lg-10 container").
+        - Diseño estructurado en lista de descripciones (dl, dt, dd) para una mejor presentación.
+-->
+@model BIBLIOTECA.Models.Libro
+
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Detalles del registro</h4>
+    <hr />
+    <div class="sombra-movimiento col-lg-10 container">
+        <div>
+            <dl class="">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.TituloLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.TituloLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.GeneroLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.GeneroLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.EditorialLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.EditorialLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.AñoPublicacionLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.AñoPublicacionLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NumeroPaginasLibro)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NumeroPaginasLibro)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Autor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Autor.NombreAutor)
+                </dd>
+            </dl>
+            <a asp-action="Edit" asp-route-id="@Model?.LibroId" class="btn btn-warning">
+                <i class="bi bi-pencil"></i>
+            </a> 
+            <a asp-action="Index" class="btn btn-darkblue">Volver</a>
+
+        </div>
+    </div>
+   
+</div>

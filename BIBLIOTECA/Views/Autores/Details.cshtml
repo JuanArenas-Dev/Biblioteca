@@ -1,0 +1,65 @@
+﻿<!--
+    Vista para mostrar los detalles de un autor en la biblioteca (ASP.NET Core Razor View)
+
+    - Modelo: BIBLIOTECA.Models.Autore
+    - Título de la vista: "Detalle"
+    - Estructura:
+        1. Encabezado con el título de la página.
+        2. Sección de detalles del autor con los siguientes campos:
+            - Nombre del autor.
+            - Nacionalidad.
+            - Fecha de nacimiento.
+            - Fecha de fallecimiento (si aplica).
+        3. Botones de acción para:
+            - Editar el registro (botón amarillo con icono de lápiz).
+            - Volver a la lista de autores.
+    - Diseño:
+        - Contenedor con efecto de sombra y animación ("sombra-movimiento").
+        - Uso de clases Bootstrap para estructura y diseño responsivo.
+-->
+@model BIBLIOTECA.Models.Autore
+
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+<h1>Detalles</h1>
+<div>
+    <h4>Detalles del registro</h4>
+    <hr />
+    <div>
+        <div class="sombra-movimiento col-lg-10 container">
+            <dl class="">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NombreAutor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NombreAutor)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NacionalidadAutor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NacionalidadAutor)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.FechaNacimientoAutor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.FechaNacimientoAutor)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.FechaFallecimientoAutor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.FechaFallecimientoAutor)
+                </dd>
+            </dl>
+            <a asp-action="Edit" asp-route-id="@Model?.AutorId" class="btn btn-warning">
+                <i class="bi bi-pencil"></i>
+            </a>
+            <a asp-action="Index" class="btn btn-darkblue">Volver</a>
+        </div>
+    </div>
+</div>
+

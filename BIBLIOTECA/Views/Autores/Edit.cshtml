@@ -1,0 +1,72 @@
+﻿<!--
+    Vista para editar un autor en la biblioteca (ASP.NET Core Razor View)
+
+    - Modelo: BIBLIOTECA.Models.Autore
+    - Título de la vista: "Editar"
+    - Estructura:
+        1. Encabezado con el título de la página.
+        2. Formulario de edición con los siguientes campos:
+            - Nombre del autor.
+            - Nacionalidad.
+            - Fecha de nacimiento.
+            - Fecha de fallecimiento (opcional).
+        3. Botones de acción para:
+            - Guardar los cambios (botón verde).
+            - Volver a la lista de autores.
+    - Diseño:
+        - Contenedor centrado en pantalla con efecto de sombra ("sombra-movimiento").
+        - Uso de clases Bootstrap para estructura responsiva.
+        - Validación de campos con mensajes de error en color rojo.
+    - Scripts:
+        - Sección `Scripts` para manejar validaciones del lado del cliente.
+-->
+@model BIBLIOTECA.Models.Autore
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<h4>Editar registro de un autor</h4>
+<hr />
+<div class=" d-flex justify-content-center align-items-center vh-100">
+    <div class="form-container sombra-movimiento">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AutorId" />
+            <div class="form-group">
+                <label asp-for="NombreAutor" class="control-label"></label>
+                <input asp-for="NombreAutor" class="form-control" />
+                <span asp-validation-for="NombreAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NacionalidadAutor" class="control-label"></label>
+                <input asp-for="NacionalidadAutor" class="form-control" />
+                <span asp-validation-for="NacionalidadAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaNacimientoAutor" class="control-label"></label>
+                <input asp-for="FechaNacimientoAutor" class="form-control" />
+                <span asp-validation-for="FechaNacimientoAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaFallecimientoAutor" class="control-label"></label>
+                <input asp-for="FechaFallecimientoAutor" class="form-control" />
+                <span asp-validation-for="FechaFallecimientoAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group text-center mt-4">
+                <input type="submit" value="Guardar" class="btn btn-success"/>
+                <a asp-action="Index" class="btn btn-darkblue">Volver</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
