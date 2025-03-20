@@ -119,8 +119,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Controllers\\AutoresController.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAIwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T20:35:33.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T20:35:33.122Z"
             },
             {
               "$type": "Document",
@@ -132,8 +131,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Libros\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T18:09:08.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T18:09:08.14Z"
             },
             {
               "$type": "Document",
@@ -145,8 +143,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Libros\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:34:14.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:34:14.326Z"
             },
             {
               "$type": "Document",
@@ -158,8 +155,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Libros\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:34:49.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:34:49.588Z"
             },
             {
               "$type": "Document",
@@ -171,8 +167,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Autores\\Index.cshtml",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:41:03.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:41:03.885Z"
             },
             {
               "$type": "Document",
@@ -184,8 +179,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:41:51.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:41:51.577Z"
             },
             {
               "$type": "Document",
@@ -197,8 +191,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T21:43:42.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:43:42.202Z"
             },
             {
               "$type": "Document",
@@ -210,8 +203,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Shared\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:42:53.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:42:53.793Z"
             },
             {
               "$type": "Document",
@@ -223,8 +215,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Autores\\Details.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:39:54.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:39:54.789Z"
             },
             {
               "$type": "Document",
@@ -236,8 +227,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Models\\Autore.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T17:56:37.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T17:56:37.346Z"
             },
             {
               "$type": "Document",
@@ -249,8 +239,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Models\\Libro.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAEoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T17:33:47.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T17:33:47.857Z"
             },
             {
               "$type": "Document",
@@ -262,8 +251,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Autores\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:36:39.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:36:39.812Z"
             },
             {
               "$type": "Document",
@@ -275,8 +263,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Autores\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:36:14.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:36:14.933Z"
             },
             {
               "$type": "Document",
@@ -288,8 +275,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Libros\\Index.cshtml",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAA8AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:35:27.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:35:27.392Z"
             },
             {
               "$type": "Document",
@@ -301,8 +287,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Autores\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T17:15:07.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T17:15:07.998Z"
             },
             {
               "$type": "Document",
@@ -314,8 +299,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T20:43:56.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T20:43:56.614Z"
             },
             {
               "$type": "Document",
@@ -327,8 +311,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Views\\Libros\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T20:17:08.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T20:17:08.817Z"
             },
             {
               "$type": "Document",
@@ -340,8 +323,7 @@
               "RelativeToolTip": "BIBLIOTECA\\wwwroot\\js\\site.js",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-20T17:19:37.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T17:19:37.067Z"
             },
             {
               "$type": "Document",
@@ -353,8 +335,7 @@
               "RelativeToolTip": "BIBLIOTECA\\Controllers\\LibrosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T20:20:34.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T20:20:34.704Z"
             },
             {
               "$type": "Document",
@@ -366,8 +347,7 @@
               "RelativeToolTip": "BIBLIOTECA\\wwwroot\\css\\site.css",
               "ViewState": "AgIAAGwAAAAAAAAAAAAAAM8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-20T18:06:20.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T18:06:20.032Z"
             }
           ]
         }

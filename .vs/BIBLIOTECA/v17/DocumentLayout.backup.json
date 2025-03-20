@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Juan\\Documents\\BIBLIOTECA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C2414685-6B54-4F03-9CF9-B88E401AD647}|BIBLIOTECA\\BIBLIOTECA.csproj|c:\\users\\juan\\documents\\biblioteca\\biblioteca\\models\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2414685-6B54-4F03-9CF9-B88E401AD647}|BIBLIOTECA\\BIBLIOTECA.csproj|solutionrelative:biblioteca\\models\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2414685-6B54-4F03-9CF9-B88E401AD647}|BIBLIOTECA\\BIBLIOTECA.csproj|c:\\users\\juan\\documents\\biblioteca\\biblioteca\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2414685-6B54-4F03-9CF9-B88E401AD647}|BIBLIOTECA\\BIBLIOTECA.csproj|solutionrelative:biblioteca\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C2414685-6B54-4F03-9CF9-B88E401AD647}|BIBLIOTECA\\BIBLIOTECA.csproj|c:\\users\\juan\\documents\\biblioteca\\biblioteca\\views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2414685-6B54-4F03-9CF9-B88E401AD647}|BIBLIOTECA\\BIBLIOTECA.csproj|solutionrelative:biblioteca\\views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2414685-6B54-4F03-9CF9-B88E401AD647}|BIBLIOTECA\\BIBLIOTECA.csproj|c:\\users\\juan\\documents\\biblioteca\\biblioteca\\models\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2414685-6B54-4F03-9CF9-B88E401AD647}|BIBLIOTECA\\BIBLIOTECA.csproj|solutionrelative:biblioteca\\models\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2414685-6B54-4F03-9CF9-B88E401AD647}|BIBLIOTECA\\BIBLIOTECA.csproj|c:\\users\\juan\\documents\\biblioteca\\biblioteca\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,19 +94,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "BibliotecaContext.cs",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\BIBLIOTECA\\BIBLIOTECA\\Models\\BibliotecaContext.cs",
               "RelativeDocumentMoniker": "BIBLIOTECA\\Models\\BibliotecaContext.cs",
               "ToolTip": "C:\\Users\\Juan\\Documents\\BIBLIOTECA\\BIBLIOTECA\\Models\\BibliotecaContext.cs",
               "RelativeToolTip": "BIBLIOTECA\\Models\\BibliotecaContext.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T21:46:23.715Z"
+              "WhenOpened": "2025-03-20T21:46:23.715Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -122,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\BIBLIOTECA\\BIBLIOTECA\\Views\\Libros\\Create.cshtml",
               "RelativeDocumentMoniker": "BIBLIOTECA\\Views\\Libros\\Create.cshtml",
@@ -134,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\BIBLIOTECA\\BIBLIOTECA\\Views\\Libros\\Delete.cshtml",
               "RelativeDocumentMoniker": "BIBLIOTECA\\Views\\Libros\\Delete.cshtml",
@@ -146,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\BIBLIOTECA\\BIBLIOTECA\\Views\\Libros\\Details.cshtml",
               "RelativeDocumentMoniker": "BIBLIOTECA\\Views\\Libros\\Details.cshtml",
@@ -158,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\BIBLIOTECA\\BIBLIOTECA\\Views\\Autores\\Index.cshtml",
               "RelativeDocumentMoniker": "BIBLIOTECA\\Views\\Autores\\Index.cshtml",
@@ -170,16 +171,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\BIBLIOTECA\\BIBLIOTECA\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "BIBLIOTECA\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Juan\\Documents\\BIBLIOTECA\\BIBLIOTECA\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "BIBLIOTECA\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T21:41:51.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:41:51.577Z"
             },
             {
               "$type": "Document",
