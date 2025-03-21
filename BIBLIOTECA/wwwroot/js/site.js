@@ -24,6 +24,22 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    $.validator.addMethod("fechaFallecimientoValida", function (value, element) {
+        let fechaNacimientoStr = $("#FechaNacimientoAutor").val();
+
+        if (fechaNacimientoStr && value) {
+            // Convertir las fechas de dd/mm/yyyy a formato Date de JavaScript
+            let partesNacimiento = fechaNacimientoStr.split("/");
+            let partesFallecimiento = value.split("/");
+
+            let fechaNacimiento = new Date(partesNacimiento[2], partesNacimiento[1] - 1, partesNacimiento[0]);
+            let fechaFallecimiento = new Date(partesFallecimiento[2], partesFallecimiento[1] - 1, partesFallecimiento[0]);
+
+            return fechaNacimiento.getTime() !== fechaFallecimiento.getTime(); // Compara ambas fechas
+        }
+        return true; // Si no se ingresa una fecha de fallecimiento, es válido
+    }, "La fecha de fallecimiento no puede ser igual a la de nacimiento.");
+
     $("form").validate({
         errorElement: "div", // Usa un <div> para los mensajes
         errorClass: "invalid-feedback", // Clase de Bootstrap para alertas
@@ -81,6 +97,7 @@ $(document).ready(function () {
 
             },
             FechaFallecimientoAutor: {
+                fechaFallecimientoValida: true
                 
 
             }
@@ -135,6 +152,8 @@ $(document).ready(function () {
 
             },
             FechaFallecimientoAutor: {
+                fechaFallecimientoValida: "La fecha de fallecimiento no puede ser igual a la de nacimiento."
+
                 
 
             }
